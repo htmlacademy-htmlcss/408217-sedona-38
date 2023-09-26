@@ -37,17 +37,109 @@
         <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ul>
+      <section class="catalog">
+        <h2 class="visually-hidden">Фильтр каталога</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <b>Инфраструктура:</b>
+        <ul class="hotel-filter-list">
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="swimming">
+          Бассейн
+            </label>
+          </li>
+      <li class="catalog-filter-item">
+        <label class="control">
+          <input class="control-input" type="checkbox" name="parking" checked>
+          Парковка
+        </label>
+      </li>
+      <li class="catalog-filter-item">
+        <label class="control">
+          <input class="control-input" type="checkbox" name="Wi-Fi" checked>
+          Wi-Fi
+        </label>
+      </li>
+        </ul>
+        <b>Тип жилья:</b>
+        <ul class="hotel-filter-list">
+          <li class="catalog-filter-item">
+              <input class="control-input" type="radio" name="contact" value="hotel" id="hotel" checked>
+              <label class="hotel">Гостиница</label>
+          </li>
+          <li class="catalog-filter-item">
+              <input class="control-input" type="radio" name="contact" value="motel" id="motel" checked>
+              <label for="motel" class="control">Мотель</label>
+          </li>
+          <li class="catalog-filter-item">
+              <input class="control-input" type="radio" name="contact" value="apart" id="apart" checked>
+              <label for="apart" class="control">Апартаменты</label>
+          </li>
+        </ul>
+        <button class="button" type="submit">Применить</button>
+        <button class="reset" type="submit">Сбросить</button>
+      </form>
+
+        <h2>Найдено гостиниц: 38</h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <a href="#" class="button">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a href="#" class="button">
+          <span class="visually-hidden">Показать таблицу</span>
+        </a>
+        <a href="#" class="button">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+
+        <ul class="product-list">
+          <li class="product-card">
+          <a class="product-card-link" href="product.html">
+            <img class="product-card-image" src="http://placehold.it/300x312" alt="">
+            <h3 class="product-card-title">Amara Resort & Spa</h3>
+          </a>
+            <p class="product-card-filter result">Гостиница</p>
+            <p class="product-card-price">От 4000 ₽</p>
+            <a class="product-card-more" href="#">Подробнее</a>
+            <a class="favourites" href="#">В избранное</a>
+            <img src="http://placehold.it/140x37" alt="Рейтинг отеля">
+            <p class="rating-product">РЕЙТИНГ: 8,5</p>
+          </li>
+        </ul>
+
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+      </section>
      </main>
     <footer class="footer">
       <ul class="social-footer">
-        <li class="icon-footer"><a class="button" href="#">В контакте</a></li>
-        <li class="icon-footer"><a class="button" href="#">Телеграм</a></li>
-        <li class="icon-footer"><a class="button" href="#">Youtube</a></li>
+        <li class="icon-footer"><a class="button" href="https://vk.com/htmlacademy">В контакте</a></li>
+        <li class="icon-footer"><a class="button" href="https://t.me/htmlacademy">Телеграм</a></li>
+        <li class="icon-footer"><a class="button" href="https://www.youtube.com/user/htmlacademyru">Youtube</a></li>
       </ul>
-      <div class="tel-footer">
-        <a href="tel:+78128121212" class="tel">+7 (812) 812-12-12</a>
-      </div>
-  <a href="#"><img src="http://placehold.it/115x33" alt="Логотип в футере"></a>
+        <a href="tel:+78128121212" class="phone-footer">+7 (812) 812-12-12</a>
+        <a href="https://htmlacademy.ru/"><img src="http://placehold.it/115x33" alt="Логотип в футере"></a>
     </footer>
   </body>
 </html>

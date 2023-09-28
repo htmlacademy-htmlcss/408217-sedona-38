@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <header class="header">
+    <header data-test="header" class="header">
   <a href="index.html"><img class="logo" src="http://placehold.it/138x64" alt="Логотип сайта"></a>
       <nav class="nav-menu">
         <ul class="nav-menu-list">
@@ -31,7 +31,7 @@
     </div>
     </header>
 
-     <main class="main-catalog">
+     <main data-test="main" class="main-catalog">
       <header class="catalog-header">
        <h1 class="catalog-header-title">Гостиницы Седоны</h1>
        <ul class="breadcrumbs">
@@ -44,7 +44,7 @@
       </ul>
       </header>
 
-      <section class="catalog">
+      <section data-test=" filter" class="catalog">
         <h2 class="visually-hidden">Фильтр каталога</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <b>Инфраструктура:</b>
@@ -109,7 +109,7 @@
           <span class="visually-hidden">Показать список</span>
         </a>
 
-        <ul class="product-list">
+        <ul data-test="catalog" class="product-list">
           <li class="product-card">
             <a href="#"><img class="product-card-image" src="http://placehold.it/300x312" alt="Amara Resort & Spa"></a>
             <a href="#"><h3 class="product-card-title">Amara Resort & Spa</h3></a>
@@ -180,7 +180,7 @@
         </ul>
       </section>
 
-      <section class="subscribe">
+      <section data-test="subscribe" class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -190,7 +190,7 @@
       </section>
      </main>
 
-    <footer class="footer">
+    <footer data-test="footer" class="footer">
       <ul class="social-footer">
         <li class="icon-footer"><a class="button" href="https://vk.com/htmlacademy">В контакте</a></li>
         <li class="icon-footer"><a class="button" href="https://t.me/htmlacademy">Телеграм</a></li>

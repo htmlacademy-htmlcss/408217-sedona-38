@@ -69,21 +69,27 @@
         <b>Тип жилья:</b>
         <ul class="hotel-filter-list">
           <li class="catalog-filter-item">
-          <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
-          <label class="hotel">Гостиница</label>
+            <label class="hotel">
+              <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
+              Гостиница
+            </label>
           </li>
           <li class="catalog-filter-item">
-            <input class="control-input" type="radio" name="hotel-type" value="motel">
-            <label class="control">Мотель</label>
+            <label class="control">
+              <input class="control-input" type="radio" name="hotel-type" value="motel">
+            Мотель</label>
           </li>
           <li class="catalog-filter-item">
-            <input class="control-input" type="radio" name="hotel-type" value="apart">
-            <label class="control">Апартаменты</label>
+            <label class="control">
+              <input class="control-input" type="radio" name="hotel-type" value="apart">
+            Апартаменты</label>
           </li>
         </ul>
         <b>Стоимость, ₽:</b>
-        <input type="text" name="catalog-filter-price" value="0">
-        <input type="text" name="catalog-filter-price" value="9000">
+        <label class="catalog-price-start" for="price-start">От</label>
+        <input type="number" name="catalog-filter-price" value="0" id="price-start">
+        <label class="catalog-price-end" for="price-end">До</label>
+        <input type="number" name="catalog-filter-price" value="9000" id="price-end">
         <button class="button" type="submit">Применить</button>
         <button class="reset" type="submit">Сбросить</button>
       </form>
@@ -97,7 +103,7 @@
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a href="#" class="button">
-          <span class="visually-hidden">Показать таблицу</span>
+          <span class="visually-hidden">Показать слайд-шоу</span>
         </a>
         <a href="#" class="button">
           <span class="visually-hidden">Показать список</span>
@@ -105,8 +111,8 @@
 
         <ul class="product-list">
           <li class="product-card">
-            <img class="product-card-image" src="http://placehold.it/300x312" alt="Amara Resort & Spa">
-            <h3 class="product-card-title">Amara Resort & Spa</h3>
+            <a href="#"><img class="product-card-image" src="http://placehold.it/300x312" alt="Amara Resort & Spa"></a>
+            <a href="#"><h3 class="product-card-title">Amara Resort & Spa</h3></a>
             <p class="product-card-filter result">Гостиница</p>
             <p class="product-card-price">От 4000 ₽</p>
             <a class="product-card-more" href="#">Подробнее</a>
@@ -117,8 +123,8 @@
         </ul>
         <ul class="product-list">
           <li class="product-card">
-            <img class="product-card-image" src="http://placehold.it/300x312" alt="Villas at Poco Diablo">
-            <h3 class="product-card-title">Villas at Poco Diablo</h3>
+            <a href="#"><img class="product-card-image" src="http://placehold.it/300x312" alt="Villas at Poco Diablo"></a>
+            <a href="#"><h3 class="product-card-title">Villas at Poco Diablo</h3></a>
             <p class="product-card-filter result">Гостиница</p>
             <p class="product-card-price">От 5000 ₽</p>
             <a class="product-card-more" href="#">Подробнее</a>
@@ -129,8 +135,8 @@
         </ul>
         <ul class="product-list">
           <li class="product-card">
-            <img class="product-card-image" src="http://placehold.it/300x312" alt="Desert Quail Inn">
-            <h3 class="product-card-title">Desert Quail Inn</h3>
+            <a href="#"><img class="product-card-image" src="http://placehold.it/300x312" alt="Desert Quail Inn"></a>
+            <a href="#"><h3 class="product-card-title">Desert Quail Inn</h3></a>
             <p class="product-card-filter result">Гостиница</p>
             <p class="product-card-price">От 2500 ₽</p>
             <a class="product-card-more" href="#">Подробнее</a>
@@ -141,8 +147,8 @@
         </ul>
         <ul class="product-list">
           <li class="product-card">
-            <img class="product-card-image" src="http://placehold.it/300x312" alt="GreenTree Inn">
-            <h3 class="product-card-title">GreenTree Inn</h3>
+            <a href="#"><img class="product-card-image" src="http://placehold.it/300x312" alt="GreenTree Inn"></a>
+            <a href="#"><h3 class="product-card-title">GreenTree Inn</h3></a>
             <p class="product-card-filter result">Гостиница</p>
             <p class="product-card-price">От 1500 ₽</p>
             <a class="product-card-more" href="#">Подробнее</a>

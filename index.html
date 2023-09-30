@@ -2,11 +2,113 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <header data-test="header" class="header">
+    <a href="index.html"><img class="logo" src="http://placehold.it/138x64" alt="Логотип сайта"></a>
+      <nav class="nav-menu">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link">Главная</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link">О Седоне</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="catalog.html" class="nav-menu-link">Каталог</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="top-user">
+      <a class="search" href="#">Поиск</a>
+      <a class="favorits" href="#">Избранное</a>
+      <a class="button-header" href="#">Хочу сюда</a>
+    </div>
+    </header>
 
+      <main data-test="main" class="main-index">
+        <h1 class="visually-hidden">Седона</h1>
+       <section data-test="hero" class="section-top">
+        <h2 class="visually-hidden">Приветствие</h2>
+        <div class="top-welcome">
+          <img src="http://placehold.it/458x352" alt="Добро пожаловать на сайт Седона">
+        </div>
+        <div class="top-subtitle">
+          <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="top-subtitle-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+      </section>
+
+      <section data-test="advantages" class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages-top">
+        <h3>Настоящий городок</h3>
+        <p class="advantages-text-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <img src="http://placehold.it/800x385" alt="Седона настоящий городок">
+      </div>
+        <div class="advantages-center">
+            <h3 class="advantages-center-title">Небольшая площадь</h3>
+            <p class="advantages-text-description">Все достопримечательности находятся очень близко</p>
+            <h3 class="advantages-center-title">Красивая дорога</h3>
+            <p class="advantages-text-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="advantages-center-title">Мало туристов</h3>
+            <p class="advantages-text-description">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+        <div class="advantages-bottom">
+          <h3>Там есть мост дьявола</h3>
+          <p class="advantages-top-text-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <img src="http://placehold.it/800x385" alt="Там есть мост дьявола">
+        </div>
+      </section>
+
+      <section class="service">
+        <h2 class="visually-hidden">Информация</h2>
+          <p class="info-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p class="info-description">Опытный персонал и качественное обслуживание!</p>
+          <h3 class="visually-hidden">Сервис</h3>
+        <div class="service-home">
+          <h3>Жильё</h3>
+          <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </div>
+          <div class="service-meal">
+            <h3>Еда</h3>
+          <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="service-souvenirs">
+            <p class="service-title">Сувениры</p>
+            <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
+          </div>
+      </section>
+
+      <section data-test="search" class="search-hotel">
+        <h2 class="visually-hidden">Поиск отеля</h2>
+          <p class="search-hotel-title">Заинтересовались?</p>
+          <p class="search-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="button button-search-hotel" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <section class="subscribe">
+        <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input type="email" name="email" placeholder="e-mail">
+            <button class="button" type="submit">Подписаться</button>
+          </form>
+      </section>
+    </main>
+
+    <footer data-test="footer" class="footer">
+      <ul class="social-footer">
+        <li class="icon-footer"><a class="button" href="https://vk.com/htmlacademy">В контакте</a></li>
+        <li class="icon-footer"><a class="button" href="https://t.me/htmlacademy">Телеграм</a></li>
+        <li class="icon-footer"><a class="button" href="https://www.youtube.com/user/htmlacademyru">Youtube</a></li>
+      </ul>
+        <a href="tel:+78128121212" class="phone-footer">+7 (812) 812-12-12</a>
+        <a href="https://htmlacademy.ru/"><img src="http://placehold.it/115x33" alt="Логотип в футере"></a>
+    </footer>
   </body>
 </html>

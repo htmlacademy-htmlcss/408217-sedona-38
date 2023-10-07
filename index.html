@@ -30,16 +30,17 @@
     <div class="top-user">
       <a class="search" href="#">Поиск</a>
       <a class="favorits" href="#">Избранное</a>
-      <a class="button-header" href="#">Хочу сюда</a>
+      <a class="button-header" href="#">Хочу сюда!</a>
     </div>
     </header>
 
       <main data-test="main" class="main-index">
-        <h1 class="visually-hidden">Седона</h1>
-       <section data-test="hero" class="section-top">
-        <h2 class="visually-hidden">Приветствие</h2>
+      <section data-test="hero" class="section-top">
+        <div class="background-welcome">
+        <h1 class="visually-hidden">Приветствие Седона</h1>
         <div class="top-welcome">
-          <img src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать на сайт Седона">
+          <img class="text-welcome" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать на сайт Седона">
+        </div>
         </div>
         <div class="top-subtitle">
           <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -50,29 +51,29 @@
       <section data-test="advantages" class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages-top">
-        <h3>Настоящий городок</h3>
-        <p class="advantages-text-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <h3 class="real-sity">Настоящий городок</h3>
+          <p class="advantages-top-text-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
         <img src="images/real-city.jpg" width="800" height="385" alt="Седона настоящий городок">
-      </div>
         <div class="advantages-center">
-            <h3 class="advantages-center-title">Небольшая площадь</h3>
-            <p class="advantages-text-description">Все достопримечательности находятся очень близко</p>
-            <h3 class="advantages-center-title">Красивая дорога</h3>
-            <p class="advantages-text-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            <h3 class="advantages-center-title">Мало туристов</h3>
-            <p class="advantages-text-description">Большинство едет в Гранд Каньон и толпится там</p>
+           <h3 class="advantages-center-title">Небольшая площадь</h3>
+           <p class="advantages-text-description">Все достопримечательности находятся очень близко</p>
+           <h3 class="advantages-center-title">Красивая дорога</h3>
+           <p class="advantages-text-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+           <h3 class="advantages-center-title">Мало туристов</h3>
+           <p class="advantages-text-description">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
         <div class="advantages-bottom">
-          <h3>Там есть мост дьявола</h3>
+          <h3 class="real-sity">Там есть мост дьявола</h3>
           <p class="advantages-top-text-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          <img src="images/bridging-devil's-bridge.jpg" width="800" height="385" alt="Там есть мост дьявола">
         </div>
+          <img src="images/bridging-devil's-bridge.jpg" width="800" height="385" alt="Там есть мост дьявола">
       </section>
 
       <section class="service">
         <h2 class="visually-hidden">Информация</h2>
           <p class="info-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="info-description">Опытный персонал и качественное обслуживание!</p>
+          <p class="info-description service-description">Опытный персонал и качественное обслуживание!</p>
           <h3 class="visually-hidden">Сервис</h3>
         <div class="service-home">
           <h3>Жильё</h3>
@@ -83,24 +84,26 @@
           <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="service-souvenirs">
-            <p class="service-title">Сувениры</p>
+            <h3>Сувениры</h3>
             <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
           </div>
       </section>
 
       <section data-test="search" class="search-hotel">
         <h2 class="visually-hidden">Поиск отеля</h2>
-          <p class="search-hotel-title">Заинтересовались?</p>
-          <p class="search-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <h2>Заинтересовались?</h2>
+          <p class="search-hotel-description service-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button button-search-hotel" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscribe">
-        <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="email" placeholder="e-mail">
-            <button class="button" type="submit">Подписаться</button>
+        <div class="subscribe-form">
+        <h2 class="visually-hidden title-subscribe">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <input type="email" name="email" placeholder="e-mail" class="email-subscribe">
+            <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
+        </div>
       </section>
     </main>
 

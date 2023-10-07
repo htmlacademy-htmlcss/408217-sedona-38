@@ -87,13 +87,14 @@
             Апартаменты</label>
           </li>
         </ul>
+        <div class="price-float">
         <b>Стоимость, ₽:</b>
         <label class="catalog-price-start" for="price-start">От</label>
         <input class="catalog-filter-price" type="number" name="catalog-filter-price" value="0" id="price-start">
         <label class="catalog-price-end" for="price-end">До</label>
         <input class="catalog-filter-price" type="number" name="catalog-filter-price" value="9000" id="price-end">
         <button class="button button-price" type="submit">Применить</button>
-        <input class="reset-price" type="reset" value="Сбросить">
+        <input class="reset-price" type="reset" value="Сбросить"></div>
       </form>
       </section>
     </div>
@@ -184,12 +185,14 @@
         </ul>
 
       <section data-test="subscribe" class="subscribe">
+        <div class="subscribe-padding">
         <h2>Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input type="email" name="email" placeholder="e-mail" class="email-subscribe">
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
+        </div>
       </section>
      </main>
 

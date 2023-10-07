@@ -183,11 +183,14 @@ h2 {
 }
 .subscribe-form {
   display: flex;
-  padding: 96px 258px 104px 258px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.subscribe-padding {
+  width: 684px;
+  padding: 96px 258px 104px 258px;
 }
 .button.button-search-hotel {
   color: #FFF;

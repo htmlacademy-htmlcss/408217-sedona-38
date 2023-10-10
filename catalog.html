@@ -13,7 +13,7 @@
     <header data-test="header" class="header">
   <a href="index.html"><img class="logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип сайта"></a>
       <nav class="nav-menu">
-        <ul class="nav-menu-list">
+        <ul>
           <li class="nav-menu-item">
             <a href="index.html" class="nav-menu-link">Главная</a>
           </li>
@@ -21,13 +21,13 @@
             <a href="#" class="nav-menu-link">О Седоне</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link nav-link-current">Каталог</a>
+            <a href="#" class="nav-menu-link nav-link-current">Гостиницы</a>
           </li>
         </ul>
       </nav>
     <div class="top-user">
-      <a class="search" href="#">Поиск</a>
-      <a class="favorits" href="#">Избранное</a>
+      <a class="search" href="#"></a>
+      <a class="favorits-number" href="#">12</a>
       <a class="button-header" href="#">Хочу сюда</a>
     </div>
     </header>
@@ -99,21 +99,22 @@
       </section>
     </div>
 
-        <h2 class="h2-title">Найдено гостиниц: 38</h2>
+        <h2 class="h2-title-result">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать слайд-шоу</span>
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-
+        <ul class="view">
+            <li>
+              <a href="#" class="button"></a>
+            </li>
+            <li>
+              <a href="#" class="button"></a>
+            </li>
+            <li>
+              <a href="#" class="button"></a>
+            </li>
+        </ul>
         <ul data-test="catalog" class="product-list">
           <li class="product-card">
             <a href="#"><img class="product-card-image" src="images/hotel-amara-resort-spa.jpg" width="300" height="312" alt="Amara Resort & Spa"></a>

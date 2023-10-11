@@ -27,10 +27,11 @@ body {
   line-height: 21px;
   background-color: #f2f2f2;
   margin: 0 auto;
-}
-
-.header, .main-index, .footer, .main-catalog {
-  background: #fff;
+  height: 2244px;
+  padding: 0 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .catalog-filter {

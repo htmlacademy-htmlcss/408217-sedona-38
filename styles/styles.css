@@ -1,9 +1,4 @@
 
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 @font-face {
 
   font-family: "PT Sans";
@@ -26,36 +21,53 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
-  margin: 0 auto;
-  height: 2244px;
-  padding: 0 40px;
-  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  width: 1060px;
+  padding: 0 70px 0 70px;
+  height: 64px;
+}
+
+.main-index, .main-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .catalog-filter {
   color: #fff;
   background: url(../images/background-filter.jpg);
   background-color: #283a42;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  width: 1200px;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
+  width: 339px;
+  justify-content: space-between;
+  padding: 0 0 0 30px;
 }
 
-/*.nav-menu-item {
-  display: flex;
-  padding: 20px 16px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  align-self: stretch;
-}*/
+.nav-menu-item {
+  list-style-type: none;
+  padding: 20px 16px 20px 16px;
+}
 
 .nav-menu-link {
   color: #000;
@@ -70,17 +82,17 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  list-style-type: none;
+  margin-left: auto;
 }
+
 .favorits-number {
   color: #fff;
   text-align: center;
-  font-family: PT Sans;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
+  line-height: 10px;
   background: var(--icons-text, #7db54f);
 }
 
@@ -98,6 +110,13 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 78px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .h2-title-result {
@@ -157,16 +176,6 @@ body {
   text-decoration: none;
 }
 
-.pagination-item {
-  color: #fff;
-  border-radius: 4px;
-  background: #82b3d3;
-  width: 60px;
-  height: 60px;
-  padding: 11.364px 0 12.636px 0;
-  text-align: center;
-}
-
 .subscribe-description {
   color: #fff;
   font-size: 22px;
@@ -199,6 +208,15 @@ body {
   text-align: center;
 }
 
+.top-subtitle-description {
+  text-align: center;
+  color: #333;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 .email-subscribe {
   font-family: inherit;
   display: flex;
@@ -219,15 +237,14 @@ body {
   text-transform: uppercase;
 }
 
-.pagination-link{
+.pagination-link {
   color: #fff;
-  text-align: center;
+  background-color: #82b3d3;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .background-welcome {
@@ -256,6 +273,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .subscribe-form {
@@ -264,11 +286,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-
-.subscribe-padding {
-  width: 684px;
-  padding: 96px 258px 104px 258px;
 }
 
 .button.button-search-hotel {
@@ -299,14 +316,6 @@ body {
 }
 
 a.button-header {
-  font-family: inherit;
-  border-radius: 4px;
-  display: flex;
-  width: 160px;
-  padding: 8px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -315,6 +324,8 @@ a.button-header {
   line-height: 20px;
   text-transform: uppercase;
   background: #756157;
+  padding: 8px 50px;
+  display: flex;
 }
 
 h3.real-sity {
@@ -379,71 +390,43 @@ p.service-description, .advantages-text-description {
 
 .button-browne {
   font-family: inherit;
-  display: flex;
-  width: 140px;
-  height: 36px;
-  color: #fff;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
   text-decoration: none;
-  padding: 8px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex: 1 0 0;
-  border-radius: 4px;
-  background: #756157;
+  text-transform: uppercase;
 }
 
 .button-blue {
   font-family: inherit;
-  display: flex;
-  width: 140px;
-  height: 36px;
-  color: #fff;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
   text-decoration: none;
-  padding: 8px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex: 1 0 0;
-  border-radius: 4px;
-  background: #82b3d3;
+  text-transform: uppercase;
 }
 
 .button-green {
   font-family: inherit;
-  display: flex;
-  width: 140px;
-  height: 36px;
-  color: #fff;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7db54f;
   text-decoration: none;
-  padding: 8px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex: 1 0 0;
-  border-radius: 4px;
-  background: #7db54f;
+  text-transform: uppercase;
 }
 
 .footer {
-  padding: 40px 70px 30px 70px;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  width: 1200px;
 }
 
 .catalog-price-start, .catalog-price-end {

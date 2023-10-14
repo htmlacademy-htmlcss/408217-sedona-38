@@ -62,6 +62,7 @@ body {
 }
 
 .catalog-filter {
+  display: flex;
   color: #fff;
   background: url(../images/background-filter.jpg);
   background-color: #283a42;
@@ -75,7 +76,7 @@ body {
   align-items: center;
   width: 339px;
   justify-content: space-between;
-  padding: 0 0 0 30px;
+  margin: 0
 }
 
 .nav-menu-item {
@@ -119,6 +120,15 @@ body {
   text-align: center;
 }
 
+.catalog-header {
+  padding: 0 70px;
+  display: flex;
+  justify-content: center;
+  width: 1060px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .catalog-header-title {
   font-size: 60px;
   font-style: normal;
@@ -139,6 +149,29 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.catalog-sort {
+  padding: 0 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  width: 1060px;
+}
+
+.product-catalog {
+  display: flex;
+  width: 1060px;
+  flex-flow: wrap;
+  margin: 20px auto;
+}
+
+.product-list {
+  list-style-type: none;
+  display: flex;
+  width: 300px;
 }
 
 .select-control, .product-card-filter.result {
@@ -253,6 +286,13 @@ body {
   text-transform: uppercase;
 }
 
+.pagination {
+  display: flex;
+  width: 1060px;
+  padding: 0 70px;
+  list-style-type: none;
+}
+
 .pagination-link {
   color: #fff;
   background-color: #82b3d3;
@@ -279,8 +319,13 @@ body {
 }
 
 .top-subtitle {
-  text-align: center;
-  padding: 60px 0;
+  display: flex;
+  padding: 69px 0;
+  flex-direction: column;
+  width: 670px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .subscribe {
@@ -304,6 +349,25 @@ body {
   align-items: center;
   gap: 10px;
   padding: 96px 258px 104px;
+}
+
+.subscribe-catalog {
+  color: #000;
+  width: 1060px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 70px;
+  margin: 0;
+}
+
+.subscribe-description-catalog {
+  color: #333;;
+}
+
+.subscribe-form-catalog {
+  width: 564px;
 }
 
 .button.button-search-hotel {
@@ -363,6 +427,14 @@ h3.real-sity {
   line-height: 28px;
 }
 
+.advantages-center {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: auto;
+  list-style-type: none;
+}
+
 .advantages-top-text-description {
   font-size: 18px;
   font-style: normal;
@@ -372,14 +444,49 @@ h3.real-sity {
   color: #fff;
 }
 
-.advantages-bottom, .advantages-top {
+.advantages-top {
   background-color: #82B3D3;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-bottom {
+  background-color: #82B3D3;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.advantages-sity {
+  width: 230px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding: 103px 85px;
+  gap: 30px;
+}
+
+.service-title-text {
+  padding: 64px 0;
+  display: flex;
+  width: 505px;
+  align-content: center;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .service-block {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 
 .service-meal,
@@ -403,10 +510,20 @@ p.service-description, .advantages-text-description {
 
 .advantages-decorations {
   background: var(--background-second-1, rgba(131, 179, 211, 0.12));
+  width: 230px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding: 103px 85px;
 }
 
 .advantages-decorations-road {
   background: var(--background-second-2, rgba(131, 179, 211, 0.20));
+  width: 230px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding: 103px 85px;
 }
 
 .select-control {
@@ -456,11 +573,21 @@ p.service-description, .advantages-text-description {
 }
 
 .footer {
-  display: flex;
   width: 1200px;
+}
+
+.contacts-footer {
+  padding: 40px 70px 30px;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-icons {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
 }
 
 .catalog-price-start, .catalog-price-end {

@@ -103,7 +103,8 @@
       </section>
     </div>
 
-        <h2 class="h2-title-result">Найдено гостиниц: 38</h2>
+    <div class="catalog-sort">
+      <h2 class="h2-title-result">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -119,6 +120,8 @@
               <a href="#" class="button"></a>
             </li>
         </ul>
+    </div>
+    <div class="product-catalog">
         <ul data-test="catalog" class="product-list">
           <li class="product-card">
             <a href="#"><img class="product-card-image" src="images/hotel-amara-resort-spa.jpg" width="300" height="212" alt="Amara Resort & Spa"></a>
@@ -167,7 +170,7 @@
             <p class="rating-product">Рейтинг: 5,0</p>
           </li>
         </ul>
-
+    </div>
         <ul class="pagination">
           <li class="pagination-item-start">
             <a class="pagination-link pagination-current">1</a>
@@ -189,25 +192,27 @@
           </li>
         </ul>
 
-      <section data-test="subscribe" class="subscribe">
+      <section data-test="subscribe" class="subscribe-catalog">
         <h2 class="h2-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="subscribe-description-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <form class="subscribe-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
             <input type="email" name="email" placeholder="e-mail" class="email-subscribe">
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
       </section>
      </main>
 
-    <footer data-test="footer" class="footer">
-      <ul class="social-footer">
+     <footer data-test="footer" class="footer">
+      <div class="contacts-footer">
+      <ul class="footer-icons">
         <li class="icon-footer"><a class="button" href="https://vk.com/htmlacademy">В контакте</a></li>
         <li class="icon-footer"><a class="button" href="https://t.me/htmlacademy">Телеграм</a></li>
         <li class="icon-footer"><a class="button" href="https://www.youtube.com/user/htmlacademyru">Youtube</a></li>
       </ul>
         <a href="tel:+78128121212" class="phone-footer">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru/"><img src="images/logo-academy.svg" width="114" height="34" alt="Логотип в футере"></a>
-    </footer>
+      </div>
+      </footer>
   </div>
   </body>
 </html>

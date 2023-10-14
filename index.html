@@ -53,11 +53,11 @@
       <section data-test="advantages" class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-top">
-          <li>
+          <li class="advantages-sity">
           <h3 class="real-sity">Настоящий городок</h3>
           <p class="advantages-top-text-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="images/real-city.jpg" width="800" height="385" alt="Седона настоящий городок">
           </li>
+          <img src="images/real-city.jpg" width="800" height="auto" alt="Седона настоящий городок">
         </ul>
         <ul class="advantages-center">
           <li class="advantages-decorations">
@@ -73,19 +73,23 @@
            <p class="advantages-text-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
+        <div class="advantages-bottom">
         <ul class="advantages-bottom">
-          <li>
+          <li class="advantages-sity">
           <h3 class="real-sity">Там есть мост дьявола</h3>
           <p class="advantages-top-text-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          <img src="images/bridging-devil's-bridge.jpg" width="800" height="385" alt="Там есть мост дьявола">
           </li>
+          <img src="images/bridging-devil's-bridge.jpg" width="800" height="auto" alt="Там есть мост дьявола">
         </ul>
+      </div>
       </section>
 
       <section class="service">
         <h2 class="visually-hidden">Информация</h2>
+        <div class="service-title-text">
           <p class="info-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
           <p class="top-subtitle-description">Опытный персонал и качественное обслуживание!</p>
+        </div>
           <ul class="service-block">
             <li class="service-home advantages-decorations">
           <h3 class="visually-hidden">Сервис</h3>
@@ -122,13 +126,15 @@
     </main>
 
     <footer data-test="footer" class="footer">
-      <ul class="social-footer">
+      <div class="contacts-footer">
+      <ul class="footer-icons">
         <li class="icon-footer"><a class="button" href="https://vk.com/htmlacademy">В контакте</a></li>
         <li class="icon-footer"><a class="button" href="https://t.me/htmlacademy">Телеграм</a></li>
         <li class="icon-footer"><a class="button" href="https://www.youtube.com/user/htmlacademyru">Youtube</a></li>
       </ul>
         <a href="tel:+78128121212" class="phone-footer">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru/"><img src="images/logo-academy.svg" width="114" height="34" alt="Логотип в футере"></a>
+      </div>
       </footer>
   </div>
   </body>

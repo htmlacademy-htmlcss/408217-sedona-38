@@ -52,7 +52,8 @@
 
       <section data-test="filter" class="catalog">
         <h2 class="visually-hidden">Фильтр каталога</h2>
-        <form action="https://echo.htmlacademy.ru/" method="get">
+        <form class="form-filter" action="https://echo.htmlacademy.ru/" method="get">
+      <div class="filter-list">
         <b>Инфраструктура:</b>
         <ul class="hotel-filter-list">
           <li class="catalog-filter-item">
@@ -91,6 +92,7 @@
             Апартаменты</label>
           </li>
         </ul>
+      </div>
         <div class="price-float">
         <b>Стоимость, ₽:</b>
         <label class="catalog-price-start" for="price-start">От</label>
@@ -103,25 +105,25 @@
       </section>
     </div>
 
-    <div class="catalog-sort">
-      <h2 class="h2-title-result">Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <ul class="view">
-            <li>
-              <a href="#" class="button"></a>
-            </li>
-            <li>
-              <a href="#" class="button"></a>
-            </li>
-            <li>
-              <a href="#" class="button"></a>
-            </li>
-        </ul>
-    </div>
     <div class="product-catalog">
+      <div class="catalog-sort">
+        <h2 class="h2-title-result">Найдено гостиниц: 38</h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <ul class="view">
+              <li>
+                <a href="#" class="button"></a>
+              </li>
+              <li>
+                <a href="#" class="button"></a>
+              </li>
+              <li>
+                <a href="#" class="button"></a>
+              </li>
+          </ul>
+      </div>
         <ul data-test="catalog" class="product-list">
           <li class="product-card">
             <a href="#"><img class="product-card-image" src="images/hotel-amara-resort-spa.jpg" width="300" height="212" alt="Amara Resort & Spa"></a>
@@ -133,8 +135,6 @@
             <img src="images/stars-4.svg" width="140" height="37" alt="Категория отеля">
             <p class="rating-product">Рейтинг: 8,5</p>
           </li>
-        </ul>
-        <ul class="product-list">
           <li class="product-card">
             <a href="#"><img class="product-card-image" src="images/hotel-villas-at-poco-diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo"></a>
             <a href="#"><h3 class="product-card-title">Villas at Poco Diablo</h3></a>
@@ -145,8 +145,6 @@
             <img src="images/stars-4.svg" width="140" height="37" alt="Категория отеля">
             <p class="rating-product">Рейтинг: 9,2</p>
           </li>
-        </ul>
-        <ul class="product-list">
           <li class="product-card">
             <a href="#"><img class="product-card-image" src="images/hotel-desert-quail-inn.jpg" width="300" height="212" alt="Desert Quail Inn"></a>
             <a href="#"><h3 class="product-card-title">Desert Quail Inn</h3></a>
@@ -157,8 +155,6 @@
             <img src="images/stars-3.svg" width="140" height="37" alt="Категория отеля">
             <p class="rating-product">Рейтинг: 6,9</p>
           </li>
-        </ul>
-        <ul class="product-list">
           <li class="product-card">
             <a href="#"><img class="product-card-image" src="images/hotel-greentree-inn.jpg" width="300" height="212" alt="GreenTree Inn"></a>
             <a href="#"><h3 class="product-card-title">GreenTree Inn</h3></a>
@@ -170,7 +166,6 @@
             <p class="rating-product">Рейтинг: 5,0</p>
           </li>
         </ul>
-    </div>
         <ul class="pagination">
           <li class="pagination-item-start">
             <a class="pagination-link pagination-current">1</a>
@@ -191,6 +186,7 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
+    </div>
 
       <section data-test="subscribe" class="subscribe-catalog">
         <h2 class="h2-title">Подпишитесь на рассылку</h2>

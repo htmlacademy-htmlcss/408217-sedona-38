@@ -43,7 +43,7 @@ body {
   display: flex;
   width: 1060px;
   padding: 0 70px 0 70px;
-  height: 64px;
+  margin-bottom: -6px;
 }
 
 .main-index, .main-catalog {
@@ -57,7 +57,7 @@ body {
 .logo {
   display: block;
   margin-bottom: -6px;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 
@@ -68,15 +68,16 @@ body {
   background-color: #283a42;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1200px;
+  width: 1060px;
+  flex-direction: column;
+  padding: 35px 70px 70px;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   width: 339px;
-  justify-content: space-between;
-  margin: 0
+  margin: auto;
 }
 
 .nav-menu-item {
@@ -91,6 +92,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 .top-user {
@@ -121,12 +123,9 @@ body {
 }
 
 .catalog-header {
-  padding: 0 70px;
   display: flex;
-  justify-content: center;
   width: 1060px;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .catalog-header-title {
@@ -134,6 +133,22 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 78px;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-filter-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.form-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
 }
 
 .breadcrumbs {
@@ -141,6 +156,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .h2-title-result {
@@ -152,7 +170,6 @@ body {
 }
 
 .catalog-sort {
-  padding: 0 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -171,7 +188,11 @@ body {
 .product-list {
   list-style-type: none;
   display: flex;
-  width: 300px;
+  width: 1060px;
+  margin: 0;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .select-control, .product-card-filter.result {
@@ -183,18 +204,26 @@ body {
   line-height: 21px;
 }
 
+.product-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .product-card-title {
   color: #000;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
-  text-decoration: none;
 }
 
-.product-card-title, a {
-  text-decoration: none;
-}
+
 
 .product-card-price {
   color: #333;
@@ -268,13 +297,18 @@ body {
 
 .email-subscribe {
   font-family: inherit;
-  padding: 12px 20px;
   background: #f2f2f2;
   border-radius: 4px 0 0 4px;
+  width: 452px;
+  flex: 1 0 0;
+  align-self: stretch;
 }
 
 .subscribe-index-form {
   margin-top: 54px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .phone-footer {
   color: #000;
@@ -289,7 +323,6 @@ body {
 .pagination {
   display: flex;
   width: 1060px;
-  padding: 0 70px;
   list-style-type: none;
 }
 
@@ -343,11 +376,6 @@ body {
 }
 
 .subscribe-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   padding: 96px 258px 104px;
 }
 
@@ -358,16 +386,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 70px;
-  margin: 0;
+  margin: 0 70px;
 }
 
 .subscribe-description-catalog {
-  color: #333;;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  width: 475px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
 }
 
 .subscribe-form-catalog {
-  width: 564px;
+  margin-top: 54px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .button.button-search-hotel {
@@ -383,15 +421,13 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin-top: 54px;
+  display: inline-block;
 }
 
 .search-hotel {
   text-align: center;
-  display: flex;
-  align-items: center;
   padding: 96px 304px;
-  flex-direction: column;
-  gap: 10px;
+  margin: auto;
 }
 
 a.button-header {
@@ -468,18 +504,14 @@ h3.real-sity {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  padding: 103px 85px;
-  gap: 30px;
+  align-items: center;
+  margin: auto;
 }
 
 .service-title-text {
   padding: 64px 0;
-  display: flex;
   width: 505px;
-  align-content: center;
   margin: auto;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .service-block {

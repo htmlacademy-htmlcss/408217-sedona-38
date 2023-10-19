@@ -78,7 +78,6 @@ body {
 
 .nav-menu-item {
   list-style-type: none;
-  padding: 20px 16px 20px 16px;
 }
 
 .nav-menu-link {
@@ -89,6 +88,7 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   text-decoration: none;
+  padding: 20px 16px;
 }
 
 .top-user {
@@ -135,10 +135,16 @@ body {
   padding: 0;
 }
 
-.filter-list {
+.filter-list-infrastructure,
+.filter-list-type {
   display: flex;
-  width: 370px;
-  justify-content: space-between;
+  width: 150px;
+  align-items: self-start;
+  flex-direction: column;
+}
+
+.title-filter {
+  padding-bottom: 20px;
 }
 
 .hotel-filter-list {
@@ -150,6 +156,17 @@ body {
   gap: 10px;
   padding: 0;
   margin: 0;
+}
+
+.price-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .form-filter {
@@ -173,6 +190,11 @@ body {
   list-style-type: none;
   padding: 0;
   margin-bottom: 0;
+  display: flex;
+}
+
+.breadcrumbs-link {
+  margin-left: 10px;
 }
 
 .h2-title-result {
@@ -204,6 +226,10 @@ body {
   padding: 50px 70px 60px;
 }
 
+.product-card-title-link {
+  text-decoration: none;
+}
+
 .product-list {
   list-style-type: none;
   display: grid;
@@ -229,9 +255,6 @@ body {
   border-radius: 4px;
   border: 1px solid #e6e6e6;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .product-card-title {
@@ -240,6 +263,17 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
+}
+
+.product-cart-block-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-cart-button {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 .product-card-price {
@@ -259,9 +293,11 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   background: #f2f2f2;
+  padding: 8px 28px;
+  border-radius: 4px;
 }
 
-.pagination-item {
+.pagination-link {
   display: grid;
   align-content: center;
   text-align: center;
@@ -269,6 +305,11 @@ body {
   height: 60px;
   border-radius: 4px;
   background: #82B3D3;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-decoration: none;
 }
 
 .subscribe-description {
@@ -344,23 +385,12 @@ body {
   width: 1060px;
   list-style-type: none;
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 8px;
   grid-template-columns: repeat(6, 60px);
   padding: 0;
 }
 
-.pagination-link {
-  color: #fff;
-  background-color: #82b3d3;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.pagination-item-start {
+.pagination-current {
   display: grid;
   align-content: center;
   text-align: center;
@@ -634,6 +664,8 @@ p.service-description, .advantages-text-description {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 26px;
 }
 
 .button-blue {
@@ -646,6 +678,8 @@ p.service-description, .advantages-text-description {
   background-color: #82b3d3;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 26px;
 }
 
 .button-green {
@@ -658,6 +692,8 @@ p.service-description, .advantages-text-description {
   background-color: #7db54f;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 24px;
 }
 
 .footer {
@@ -675,9 +711,6 @@ p.service-description, .advantages-text-description {
 .footer-icons {
   padding: 0;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(3,40px);
-  gap: 10px;
 }
 
 .catalog-price-start, .catalog-price-end {
@@ -688,24 +721,19 @@ p.service-description, .advantages-text-description {
 
 .button-price {
   font-family: inherit;
-  display: flex;
   width: 191px;
   height: 36px;
   padding: 8px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   border-radius: 4px;
-  border: 1px solid #000;
   background: #82b3d3;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  text-align: center;
   color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .reset-price {
@@ -732,8 +760,6 @@ p.service-description, .advantages-text-description {
 .catalog-filter-price {
   width: 143px;
   padding: 12px 20px;
-  justify-content: space-between;
-  align-items: center;
   color: #000;
   border-radius: 4px 0 0 4px;
   background: #f2f2f2;
@@ -749,4 +775,25 @@ p.service-description, .advantages-text-description {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.icon-footer {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button-icon-vk {
+  background-image: url(/images/icon-vk.svg);
+}
+
+.button-icon-telegram {
+  background-image: url("/images/icon-telegram.svg");
+}
+
+.button-icon-youtube {
+  background-image: url('/images/icon-youtube.svg');
 }

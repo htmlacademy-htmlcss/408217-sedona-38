@@ -94,9 +94,32 @@ body {
 .top-user {
   display: flex;
   align-items: center;
-  gap: 20px;
   list-style-type: none;
   margin-left: auto;
+}
+
+.top-button {
+margin-left: 20px;
+}
+
+.search-link {
+  background: url(/images/icon-search.svg);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+  padding: 12px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heart-link {
+  background: url(/images/icon-heart.svg);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+  padding: 12px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .favorits-number {
@@ -120,6 +143,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
 }
 
 .catalog-header {
@@ -711,6 +735,18 @@ p.service-description, .advantages-text-description {
 .footer-icons {
   padding: 0;
   list-style-type: none;
+  margin: 0;
+  display: flex;
+}
+
+.button-icon-vk,
+.button-icon-telegram,
+.button-icon-youtube {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .catalog-price-start, .catalog-price-end {
@@ -781,19 +817,18 @@ p.service-description, .advantages-text-description {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.button-icon-vk {
-  background-image: url(/images/icon-vk.svg);
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
-.button-icon-telegram {
-  background-image: url("/images/icon-telegram.svg");
-}
-
-.button-icon-youtube {
-  background-image: url('/images/icon-youtube.svg');
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }

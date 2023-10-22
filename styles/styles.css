@@ -42,7 +42,6 @@ body {
   display: flex;
   width: 1060px;
   padding: 0 70px 0 70px;
-  margin-bottom: -6px;
 }
 
 .main-index, .main-catalog {
@@ -70,8 +69,7 @@ body {
 
 .nav-menu {
   display: flex;
-  align-items: center;
-  margin: auto;
+  padding-left: 170px;
   width: 339px;
   flex-wrap: wrap;
 }
@@ -96,6 +94,7 @@ body {
   align-items: center;
   list-style-type: none;
   margin-left: auto;
+  padding-right: 20px;
 }
 
 .top-button {
@@ -444,10 +443,7 @@ margin-left: 20px;
 .text-welcome {
   width: 458px;
   height: 352px;
-  flex-shrink: 0;
   padding: 51px 371px 82px 371px;
-  display: block;
-  margin: auto;
 }
 
 .top-subtitle {
@@ -529,6 +525,7 @@ a.button-header {
   padding: 8px 50px;
   display: flex;
   text-decoration: none;
+  align-self: center;
 }
 
 h3.real-sity {
@@ -663,7 +660,6 @@ p.service-description, .advantages-text-description {
   border-radius: 4px;
   border: 2px solid var(--icons-basic, #e5e5e5);
   display: grid;
-  gap: 10px;
 }
 
 .select-control {

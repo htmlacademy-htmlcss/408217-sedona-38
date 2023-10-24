@@ -272,6 +272,15 @@ margin-left: 20px;
   justify-content: space-between;
   padding: 20px;
   grid-template-rows: 212px 1fr;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+  align-items: center;
+}
+
+.product-card-image-link,
+.product-card-link {
+  grid-column: span 2;
+  text-decoration: none;
 }
 
 .product-card-title {
@@ -280,6 +289,7 @@ margin-left: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
+  margin: 0;
 }
 
 .product-cart-block-price {
@@ -299,6 +309,7 @@ margin-left: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  text-align: right;
 }
 
 .rating-product {
@@ -310,7 +321,7 @@ margin-left: 20px;
   line-height: 20px;
   text-transform: uppercase;
   background: #f2f2f2;
-  padding: 8px 28px;
+  padding: 8px 20px;
   border-radius: 4px;
 }
 
@@ -396,6 +407,11 @@ margin-left: 20px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.logo-htmlacademy {
+  display: flex;
+  align-items: center;
 }
 
 .pagination {
@@ -693,7 +709,7 @@ p.service-description, .advantages-text-description {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 8px 26px;
+  padding: 8px 20px;
 }
 
 .button-green {
@@ -707,7 +723,7 @@ p.service-description, .advantages-text-description {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 8px 24px;
+  padding: 8px 16px;
 }
 
 .footer {

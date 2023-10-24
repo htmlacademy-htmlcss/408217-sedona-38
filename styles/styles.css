@@ -254,6 +254,20 @@ margin-left: 20px;
   gap: 16px 20px;
   list-style-type: none;
   padding: 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.product-list::after {
+  content: "";
+  width: 1060px;
+  height: 1px;
+  background: #E6E6E6;
+  display: block;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  bottom: -40px;
 }
 
 .select-control, .product-card-filter.result {
@@ -269,7 +283,6 @@ margin-left: 20px;
   display: grid;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
-  justify-content: space-between;
   padding: 20px;
   grid-template-rows: 212px 1fr;
   grid-template-columns: repeat(2, 140px);
@@ -420,7 +433,7 @@ margin-left: 20px;
   display: grid;
   grid-gap: 8px;
   grid-template-columns: repeat(6, 60px);
-  padding: 0;
+  padding: 40px 0 0;
 }
 
 .pagination-current {
@@ -564,6 +577,17 @@ h3.real-sity {
   padding: 0;
   margin: auto;
   list-style-type: none;
+  position: relative;
+}
+
+li.line-decoration::before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.30);
+  position: absolute;
+  display: block;
+  margin: 80px;
 }
 
 .advantages-top-text-description {
@@ -582,6 +606,7 @@ h3.real-sity {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .advantages-bottom {
@@ -601,6 +626,15 @@ h3.real-sity {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding: 91px 85px;
+}
+
+.advantages-sity::before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.30);
+  position: absolute;
 }
 
 .service-title-text {

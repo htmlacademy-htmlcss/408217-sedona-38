@@ -42,6 +42,7 @@ body {
   display: flex;
   width: 1060px;
   padding: 0 70px 0 70px;
+  position: relative;
 }
 
 .main-index, .main-catalog {
@@ -69,8 +70,7 @@ body {
 
 .nav-menu {
   display: flex;
-  padding-left: 170px;
-  width: 339px;
+  padding: 2px 0 2px 170px;
   flex-wrap: wrap;
 }
 
@@ -87,6 +87,33 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   padding: 20px 16px;
+  position: relative;
+}
+
+.nav-menu-link:visited {
+
+}
+
+.nav-menu-link:hover {
+
+}
+
+.nav-menu-link:active {
+
+}
+
+.navigation-current a:not([href]) {
+  background-color: #fff;
+}
+
+.navigation-current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #756257;
+  left: 0;
 }
 
 .top-user {
@@ -102,20 +129,14 @@ margin-left: 20px;
 }
 
 .search-link {
-  background: url(/images/icon-search.svg);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
+  background: url(../images/icon-search.svg);
   padding: 12px 20px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .heart-link {
-  background: url(/images/icon-heart.svg);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
+  background: url(../images/icon-heart.svg);
   padding: 12px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -129,10 +150,11 @@ margin-left: 20px;
   font-weight: 400;
   line-height: 10px;
   background: var(--icons-text, #7db54f);
-  padding: 3px;
+  padding: 4px;
   position: absolute;
   margin: -8px;
   border-radius: 10px;
+  right: 254px;
 }
 
 .h2-title, .info-title {
@@ -254,13 +276,25 @@ margin-left: 20px;
 }
 
 .product-list {
-  list-style-type: none;
   display: grid;
-  width: 1060px;
-  margin: 0;
+  grid-template-columns: repeat(3, 340px);
+  gap: 16px 20px;
+  list-style-type: none;
   padding: 0;
-  justify-content: space-between;
-  grid-template-columns: repeat(3,auto);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.product-list::after {
+  content: "";
+  width: 1060px;
+  height: 1px;
+  background: #E6E6E6;
+  display: block;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  bottom: -40px;
 }
 
 .select-control, .product-card-filter.result {
@@ -273,11 +307,20 @@ margin-left: 20px;
 }
 
 .product-card {
-  width: 300px;
-  padding: 20px;
+  display: grid;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
-  margin-bottom: 20px;
+  padding: 20px;
+  grid-template-rows: 212px 1fr;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+  align-items: center;
+}
+
+.product-card-image-link,
+.product-card-link {
+  grid-column: span 2;
+  text-decoration: none;
 }
 
 .product-card-title {
@@ -286,6 +329,7 @@ margin-left: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
+  margin: 0;
 }
 
 .product-cart-block-price {
@@ -305,6 +349,7 @@ margin-left: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  text-align: right;
 }
 
 .rating-product {
@@ -316,7 +361,7 @@ margin-left: 20px;
   line-height: 20px;
   text-transform: uppercase;
   background: #f2f2f2;
-  padding: 8px 28px;
+  padding: 8px 20px;
   border-radius: 4px;
 }
 
@@ -366,6 +411,7 @@ margin-left: 20px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
 }
 
 .top-subtitle-description {
@@ -404,13 +450,18 @@ margin-left: 20px;
   text-decoration: none;
 }
 
+.logo-htmlacademy {
+  display: flex;
+  align-items: center;
+}
+
 .pagination {
   width: 1060px;
   list-style-type: none;
   display: grid;
   grid-gap: 8px;
   grid-template-columns: repeat(6, 60px);
-  padding: 0;
+  padding: 40px 0 0;
 }
 
 .pagination-current {
@@ -463,7 +514,7 @@ margin-left: 20px;
 }
 
 .subscribe-form {
-  padding: 96px 258px 104px;
+  padding: 96px 304px 96px;
 }
 
 .subscribe-catalog {
@@ -522,7 +573,7 @@ a.button-header {
   text-transform: uppercase;
   background: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 32px;
   display: flex;
   text-decoration: none;
   align-self: center;
@@ -554,6 +605,17 @@ h3.real-sity {
   padding: 0;
   margin: auto;
   list-style-type: none;
+  position: relative;
+}
+
+li.line-decoration::before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.30);
+  position: absolute;
+  display: block;
+  margin: 80px;
 }
 
 .advantages-top-text-description {
@@ -572,6 +634,7 @@ h3.real-sity {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .advantages-bottom {
@@ -591,6 +654,15 @@ h3.real-sity {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding: 91px 85px;
+}
+
+.advantages-sity::before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.30);
+  position: absolute;
 }
 
 .service-title-text {
@@ -604,6 +676,10 @@ h3.real-sity {
   justify-content: space-between;
   padding: 0;
   margin: 0;
+}
+
+.service-padding {
+  padding: 80px 85px;
 }
 
 .service-home::before {
@@ -626,7 +702,7 @@ h3.real-sity {
 .service-home {
   width: 230px;
   display: block;
-  padding: 80px 85px;
+  padding: 74px 85px;
   text-align: center;
 }
 
@@ -643,7 +719,7 @@ p.service-description, .advantages-text-description {
   background: var(--background-second-1, rgba(131, 179, 211, 0.12));
   width: 230px;
   display: block;
-  padding: 80px 85px;
+  padding: 103px 85px;
   text-align: center;
 }
 
@@ -651,7 +727,15 @@ p.service-description, .advantages-text-description {
   background: var(--background-second-2, rgba(131, 179, 211, 0.20));
   width: 230px;
   display: block;
-  padding: 80px 85px;
+  padding: 103px 85px;
+  text-align: center;
+}
+
+.advantages-decorations-bottom {
+  background: var(--background-second-1, rgba(131, 179, 211, 0.12));
+  width: 230px;
+  display: block;
+  padding: 74px 85px;
   text-align: center;
 }
 
@@ -699,7 +783,7 @@ p.service-description, .advantages-text-description {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 8px 26px;
+  padding: 8px 20px;
 }
 
 .button-green {
@@ -713,7 +797,7 @@ p.service-description, .advantages-text-description {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 8px 24px;
+  padding: 8px 16px;
 }
 
 .footer {
@@ -732,7 +816,7 @@ p.service-description, .advantages-text-description {
   padding: 0;
   list-style-type: none;
   margin: 0;
-  display: flex;
+  display: inline-block;
 }
 
 .button-icon-vk,

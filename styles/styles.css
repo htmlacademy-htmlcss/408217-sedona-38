@@ -70,7 +70,7 @@ body {
 
 .nav-menu {
   display: flex;
-  padding: 2px 0 2px 170px;
+  padding: 2px 0 2px 168px;
   flex-wrap: wrap;
 }
 
@@ -113,7 +113,8 @@ body {
   align-items: center;
   list-style-type: none;
   margin-left: auto;
-  padding-right: 20px;
+  padding-right: 21px;
+  margin-top: 20px;
 }
 
 .top-button {
@@ -136,17 +137,18 @@ margin-left: 20px;
 }
 
 .favorits-number {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: 10px;
   background: var(--icons-text, #7db54f);
-  padding: 4px;
+  padding: 5px;
   position: absolute;
-  margin-top: -5px;
+  margin-top: -11px;
   border-radius: 10px;
+  margin-left: -2px;
 }
 
 .h2-title, .info-title {
@@ -774,7 +776,7 @@ a.button-header {
   text-transform: uppercase;
   background: #756157;
   border-radius: 4px;
-  padding: 8px 35px;
+  padding: 9px 35px;
   display: flex;
   text-decoration: none;
   align-self: center;
@@ -1326,7 +1328,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .modal {
   position: relative;
   margin: auto;
-  padding: 64px 70px;
+  padding: 61px 71px;
   border-radius: 30px;
   background: #fff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -1424,7 +1426,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .modal-container-close {
-  display: ;
+  display: none;
 }
 
 .tooltip {
@@ -1463,11 +1465,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 216px;
   position: absolute;
   top: 100%;
-  margin-top: 40px;
+  margin-top: 33px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  display: ;
+  display: none;
+  margin-left: 4px;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -1538,8 +1541,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
   position: absolute;
 }
 
-  .tooltip-toggle:before {
-    content: "";
-    background-image: url("../images/triangle.svg");
-    background-repeat: no-repeat;
+.tooltip-text:before {
+  content: "";
+  background-image: url("../images/triangle.svg");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  top: -7%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   }

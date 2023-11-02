@@ -111,15 +111,19 @@
       <div>
       <legend><b class="title-filter">Стоимость, ₽:</b></legend>
         <div class="price-filter-field">
+          <div class="catalog-price-left">
         <label class="catalog-price-start" for="price-start">от</label>
         <input class="catalog-filter-price" type="number" name="catalog-filter-price" value="0" id="price-start">
+          </div>
+          <div class="catalog-price-right">
         <label class="catalog-price-end" for="price-end">до</label>
         <input class="catalog-filter-price" type="number" name="catalog-filter-price" value="9000" id="price-end">
+          </div>
         </div>
       </div>
       <div class="range">
         <div class="range-scale">
-          <div class="range-bar" style="left: 0; width: 202px;">
+          <div class="range-bar" style="left: 0; width: 226px;">
             <button type="button" class="range-toggle toggle-min">
               <span class="visually-hidden">Изменить минимальную цену</span>
             </button>
@@ -215,7 +219,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li  class="pagination-item-dots">
-            <a class="pagination-link-dots" href="#">...</a>
+            <a class="pagination-link-dots" href="#">. . .</a>
           </li>
           <li  class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -224,10 +228,10 @@
     </div>
 
       <section data-test="subscribe" class="subscribe-catalog">
-        <h2 class="h2-title">Подпишитесь на рассылку</h2>
+        <h2 class="h2-title-subscribe-catalog">Подпишитесь на рассылку</h2>
           <p class="subscribe-description-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="email" placeholder="Ваш: e-mail" class="email-subscribe">
+            <input type="email" name="email" placeholder="Ваш e-mail" class="email-subscribe">
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
       </section>

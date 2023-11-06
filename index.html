@@ -145,31 +145,31 @@
       </button>
         <h2 class="modal-title">Поиск гостиницы в седоне</h2>
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="field-group">
+          <div class="field-group">
             <label for="auth-date-start" class="modal-subtitle form-label-date">Дата Заезда:</label>
             <input class="auth-form-field field" type="text" id="auth-date-start" name="auth-date-start" value="27 апреля 2020" placeholder="Укажите дату" required>
             <p class="modal-text modal-text-red">Мы не можем отправить вас в прошлое.</p>
-          </p>
-          <p class="field-group">
+          </div>
+          <div class="field-group">
             <label for="auth-date-end" class="modal-subtitle form-label-date">Дата Выезда:</label>
             <input class="auth-form-field field" aria-labelledby="tooltip-label-date" type="text" id="auth-date-end" value="1 сентября 2023" name="auth-date-end" placeholder="Укажите дату" required>
             <p class="modal-text modal-text-black">На эти даты есть свободные номера. Пока есть.</p>
-          </p>
+          </div>
           <div class="number-guests">
           <p class="field-group">
             <label for="number-adults" class="modal-subtitle form-label-number">Взрослые:</label>
-            <button class="button-number-min"><svg class="button-number-min-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3"/></svg></button>
+            <button class="button-number-min" type="button"><svg class="button-number-min-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157"/></svg></button>
             <input type="number" aria-labelledby="tooltip-label-date" name="number-adults" placeholder="2" id="number-adults" max="99" class="number-modal" required>
-            <button class="button-number-max"><svg class="button-number-max-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3"/></svg></button>
+            <button class="button-number-max" type="button"><svg class="button-number-max-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157"/></svg></button>
           </p>
           <p class="field-group">
             <label for="number-child" class="modal-subtitle form-label-number form-label-number-child">Дети:</label>
             <span class="tooltip">
             <button class="tooltip-toggle" type="button"></button>
             <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span></span>
-            <button class="button-number-min"><svg class="button-number-min-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3"/></svg></button>
+            <button class="button-number-min" type="button"><svg class="button-number-min-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157"/></svg></button>
             <input type="number" name="number-child" placeholder="2" id="number-child" max="99" class="number-modal" required>
-            <button class="button-number-max"><svg class="button-number-max-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3"/></svg></button>
+            <button class="button-number-max" type="button"><svg class="button-number-max-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157"/></svg></button>
           </p>
           </div>
           <button class="button button-modal" type="submit">Найти</button>

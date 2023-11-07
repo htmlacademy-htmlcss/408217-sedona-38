@@ -762,8 +762,8 @@ fieldset {
 }
 
 .background-welcome {
-  background-color: #fff;
   background: url("../images/divider.svg") bottom center no-repeat, url("../images/index-background.jpg") top center no-repeat;
+  background-color: #29313c;
 }
 
 .text-welcome {

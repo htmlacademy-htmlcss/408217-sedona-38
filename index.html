@@ -10,9 +10,10 @@
   </head>
   <body>
     <div class="container">
-    <header data-test="header" class="header">
+    <header class="header" data-test="header">
       <a href="index.html"><img class="logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип сайта"></a>
-        <ul class="nav-menu">
+        <nav>
+          <ul class="nav-menu">
           <li class="nav-menu-item">
             <a href="#" class="nav-menu-link navigation-current">Главная</a>
           </li>
@@ -23,6 +24,7 @@
             <a href="catalog.html" class="nav-menu-link">Гостиницы</a>
           </li>
         </ul>
+        </nav>
     <ul class="top-user">
       <li class="top-icon">
         <a class="search-link" href="#"></a>
@@ -34,21 +36,21 @@
     <a class="button-header" href="#">Хочу сюда!</a>
     </header>
 
-      <main data-test="main" class="main-index">
-      <section data-test="hero" class="section-top">
+      <main class="main-index" data-test="main">
+      <section class="section-top"  data-test="hero">
         <div class="background-welcome">
         <h1 class="visually-hidden">Приветствие Седона</h1>
         <div class="top-welcome">
           <img class="text-welcome" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать на сайт Седона">
         </div>
         </div>
+      </section>
+
+      <section class="advantages" data-test="advantages">
         <div class="top-subtitle">
           <h2 class="h2-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="top-subtitle-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
-      </section>
-
-      <section data-test="advantages" class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages-top">
           <div class="advantages-sity">
@@ -85,42 +87,42 @@
         </div>
       </section>
 
-      <section class="service">
+      <section class="service" data-test="service">
         <h2 class="visually-hidden">Информация</h2>
         <div class="service-title-text">
-          <p class="info-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p class="info-title info-title-welcome">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
           <p class="top-subtitle-description">Опытный персонал и качественное обслуживание!</p>
         </div>
           <ul class="service-block">
             <li class="service-home advantages-decorations-bottom">
           <h3 class="visually-hidden">Сервис</h3>
-          <h3 class="h3-title">Жильё</h3>
+          <h3 class="h3-title h3-title-service">Жильё</h3>
           <p class="service-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="service-meal">
-            <h3 class="h3-title">Еда</h3>
+            <h3 class="h3-title h3-title-service">Еда</h3>
           <p class="service-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
             <li class="service-souvenirs advantages-decorations-bottom">
-            <h3 class="h3-title">Сувениры</h3>
+            <h3 class="h3-title h3-title-service">Сувениры</h3>
             <p class="service-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
             </li>
         </ul>
       </section>
 
-      <section data-test="search" class="search-hotel">
+      <section class="search-hotel" data-test="search" >
         <h2 class="visually-hidden">Поиск отеля</h2>
-          <h2 class="h2-title">Заинтересовались?</h2>
+          <h2 class="h2-title search-hotel-h2title">Заинтересовались?</h2>
           <p class="search-hotel-description top-subtitle-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button button-search-hotel" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section data-test="subscribe" class="subscribe">
+      <section class="subscribe"  data-test="subscribe">
         <div class="subscribe-form">
         <h2 class="title-subscribe">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-index-form">
             <input type="email" name="email" placeholder="Ваш e-mail" class="email-subscribe">
-            <button class="button button-subscribe" type="submit">Подписаться</button>
+            <button class="button button-subscribe" type="submit" aria-label="Подписаться на рассылку">Подписаться</button>
           </form>
         </div>
       </section>
@@ -138,42 +140,42 @@
       </div>
       </footer>
   </div>
-  <div class="modal-container modal-container-close">
+  <div class="modal-container modal-container-close" data-test="modal">
     <div class="modal modal-auth">
-      <button class="modal-close-button">
+      <button class="modal-close-button"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.49 4.783 16.198 3.49l-5.707 5.707-5.708-5.707L3.49 4.783l5.708 5.708-5.708 5.707 1.293 1.293 5.708-5.708 5.707 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z" fill="#000"/></svg>
         <span class="visually-hidden">Закрыть</span>
       </button>
         <h2 class="modal-title">Поиск гостиницы в седоне</h2>
-      <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="field-group">
-          <label for="auth-date-start" class="modal-subtitle form-label-date">Дата Заезда:</label>
-          <input class="auth-form-field field" type="text" id="auth-date-start" name="auth-date-start" placeholder="27 апреля 2020" required>
-          <p class="modal-text modal-text-red">Мы не можем отправить вас в прошлое.</p>
-        </p>
-        <p class="field-group">
-          <label for="auth-date-end" class="modal-subtitle form-label-date">Дата Выезда:</label>
-          <input class="auth-form-field field" aria-labelledby="tooltip-label-date" type="text" id="auth-date-end" name="auth-date-end" placeholder="1 сентября 2023" required>
-          <p class="modal-text modal-text-black">На эти даты есть свободные номера. Пока есть.</p>
-        </p>
-        <div class="number-guests">
-        <p class="field-group">
-          <label for="number-adults" class="modal-subtitle form-label-number">Взрослые:</label>
-          <button class="button-number-min"></button>
-          <input type="number" aria-labelledby="tooltip-label-date" name="number-adults" placeholder="2" id="number-adults" max="99" class="number-modal" required>
-          <button class="button-number-max"></button>
-        </p>
-        <p class="field-group">
-          <label for="number-child" class="modal-subtitle form-label-number form-label-number-child">Дети:</label>
-          <span class="tooltip">
-          <button class="tooltip-toggle" type="button"></button>
-          <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span></span>
-          <button class="button-number-min"></button>
-          <input type="number" name="number-child" placeholder="2" id="number-child" max="99" class="number-modal" required>
-          <button class="button-number-max"></button>
-        </p>
-        </div>
-        <button class="button button-modal" type="submit">Найти</button>
-      </form>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group">
+            <label for="auth-date-start" class="modal-subtitle form-label-date">Дата Заезда:</label>
+            <input class="auth-form-field field" type="text" id="auth-date-start" name="auth-date-start" value="27 апреля 2020" placeholder="Укажите дату" required>
+            <p class="modal-text modal-text-red">Мы не можем отправить вас в прошлое.</p>
+          </div>
+          <div class="field-group">
+            <label for="auth-date-end" class="modal-subtitle form-label-date">Дата Выезда:</label>
+            <input class="auth-form-field field" type="text" id="auth-date-end" value="1 сентября 2023" name="auth-date-end" placeholder="Укажите дату" required>
+            <p class="modal-text modal-text-black">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+          <div class="number-guests">
+          <p class="field-group">
+            <label for="number-adults" class="modal-subtitle form-label-number">Взрослые:</label>
+            <button class="button-number-min" type="button" aria-label="минус"><svg class="button-number-min-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157"/></svg></button>
+            <input type="number" name="number-adults" placeholder="2" id="number-adults" max="99" class="number-modal" required>
+            <button class="button-number-max" type="button" aria-label="плюс"><svg class="button-number-max-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157"/></svg></button>
+          </p>
+          <p class="field-group">
+            <label for="number-child" class="modal-subtitle form-label-number form-label-number-child">Дети:</label>
+            <span class="tooltip">
+            <button class="tooltip-toggle" type="button"></button>
+            <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span></span>
+            <button class="button-number-min" type="button" aria-label="минус"><svg class="button-number-min-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157"/></svg></button>
+            <input type="number" name="number-child" placeholder="2" id="number-child" max="99" class="number-modal" required>
+            <button class="button-number-max" type="button" aria-label="плюс"><svg class="button-number-max-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157"/></svg></button>
+          </p>
+          </div>
+          <button class="button button-modal" type="submit" aria-label="найти">Найти</button>
+        </form>
     </div>
   </div>
   </body>

@@ -91,13 +91,19 @@ body {
   position: relative;
 }
 
-.nav-menu-link:hover,
+.nav-menu-link:hover {
+  opacity: 0.6;
+}
+
 .search-link:hover,
 .heart-link:hover {
   opacity: 0.6;
 }
 
-.nav-menu-link:focus,
+.nav-menu-link:focus {
+  outline: 3px solid #83b3d3;
+}
+
 .search-link:focus,
 .heart-link:focus {
   outline: 3px solid #83b3d3;
@@ -162,7 +168,8 @@ margin-left: 20px;
   margin-left: -2px;
 }
 
-.h2-title, .info-title {
+.h2-title,
+.info-title {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -439,7 +446,8 @@ fieldset {
   bottom: -40px;
 }
 
-.select-control, .product-card-filter.result {
+.select-control,
+.product-card-filter.result {
   font-family: inherit;
   color: #333;
   font-size: 18px;
@@ -1002,7 +1010,13 @@ h3.real-sity {
   display: block;
 }
 
-.service-meal,
+.service-meal {
+  width: 230px;
+  display: block;
+  padding: 83px 85px;
+  text-align: center;
+}
+
 .service-souvenirs,
 .service-home {
   width: 230px;
@@ -1011,7 +1025,8 @@ h3.real-sity {
   text-align: center;
 }
 
-p.service-description, .advantages-text-description {
+p.service-description,
+.advantages-text-description {
   color: #333;
   text-align: center;
   font-size: 18px;
@@ -1119,21 +1134,33 @@ p.service-description, .advantages-text-description {
   padding: 8px 26px;
 }
 
-.button-browne:hover,
+.button-browne:hover {
+  background: #615048;
+  color: #fff;
+}
+
 .button-header:hover,
 .button-search-hotel:hover {
   background: #615048;
   color: #fff;
 }
 
-.button-browne:focus,
+.button-browne:focus {
+  background: #615048;
+  color: #fff;
+}
+
 .button-header:focus,
 .button-search-hotel:focus {
   background: #615048;
   color: #fff;
 }
 
-.button-browne:active,
+.button-browne:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.30);
+}
+
 .button-header:active,
 .button-search-hotel:active {
   background: #756157;
@@ -1154,17 +1181,20 @@ p.service-description, .advantages-text-description {
   padding: 8px 20px;
 }
 
-.button-blue:hover, .button-subscribe:hover {
+.button-blue:hover,
+.button-subscribe:hover {
   background-color: #68a2ca;
   color: #fff;
 }
 
-.button-blue:focus, .button-subscribe:focus {
+.button-blue:focus,
+.button-subscribe:focus {
   background-color: #68a2ca;
   color: #fff;
 }
 
-.button-blue:active, .button-subscribe:active {
+.button-blue:active,
+.button-subscribe:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.30);
 }
@@ -1218,7 +1248,14 @@ p.service-description, .advantages-text-description {
   width: 130px;
 }
 
-.button-icon-vk,
+.button-icon-vk {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
 .button-icon-telegram,
 .button-icon-youtube {
   display: flex;
@@ -1682,7 +1719,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .modal-text-black {
   color: #333;
-  font-family: PT Sans;
+  font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1705,7 +1742,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-right: auto;
   }
 
-  fieldset, legend {
+  .fieldset, legend {
     padding: 0;
     margin: 0;
   }

@@ -91,16 +91,16 @@ body {
   position: relative;
 }
 
-.nav-menu-link:hover {
-  opacity: 0.6;
-}
-
-.search-link:hover {
-  opacity: 0.6;
-}
-
+.nav-menu-link:hover,
+.search-link:hover,
 .heart-link:hover {
   opacity: 0.6;
+}
+
+.nav-menu-link:focus,
+.search-link:focus,
+.heart-link:focus {
+  outline: 3px solid #83b3d3;
 }
 
 .navigation-current a:not([href]) {
@@ -303,6 +303,23 @@ margin-left: 20px;
   right: 0;
 }
 
+.toggle-max:hover,
+.toggle-min:hover {
+  box-shadow: #f2f2f2 0 0 6px;
+}
+
+.toggle-max:focus,
+.toggle-min:focus {
+  box-shadow: #f2f2f2 0 0 6px;
+  outline: 3px solid #83b3d3;
+}
+
+.toggle-max:active,
+.toggle-min:active {
+  box-shadow: #f2f2f2 0 0 6px;
+  outline: 2px solid #83b3d3;
+}
+
 fieldset {
   border: 0;
   margin: 0;
@@ -414,7 +431,7 @@ fieldset {
   content: "";
   width: 1060px;
   height: 1px;
-  background: #E6E6E6;
+  background: #e6e6e6;
   display: block;
   transform: translateX(-50%);
   left: 50%;
@@ -452,8 +469,8 @@ fieldset {
   transform: rotate(45deg);
   height: 10px;
   width: 5px;
-  border-bottom: 2px solid #3F5E72;
-  border-right: 2px solid #3F5E72;
+  border-bottom: 2px solid #3f5e72;
+  border-right: 2px solid #3f5e72;
   content: "";
   margin: 30%;
   bottom: 0;
@@ -481,7 +498,7 @@ fieldset {
   content: "";
   margin: 20%;
   bottom: 0;
-  background-color: #3F5E72;
+  background-color: #3f5e72;
 }
 
 .control-input[type="radio"]:focus + .control-mark-circle {
@@ -570,26 +587,26 @@ fieldset {
   width: 58px;
   height: 58px;
   border-radius: 4px;
-  background: #82B3D3;
+  background: #82b3d3;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   text-decoration: none;
   position: absolute;
-  border: 1px solid var(--buttons-second, #82B3D3);
+  border: 1px solid #82b3d3;
 }
 
 .pagination-link:hover {
-  background: var(--buttons-blue-hover, #68A2CA);
+  background-color: #68a2ca;
 }
 
 .pagination-link:focus {
-  background: var(--buttons-blue-hover, #68A2CA);
+  background-color: #68a2ca;
 }
 
 .pagination-link:active {
-  background: var(--buttons-second, #82B3D3);
+  background-color: #82b3d3;
 }
 
 .subscribe-description {
@@ -1032,23 +1049,23 @@ p.service-description, .advantages-text-description {
 .button-icon {
   padding: 14px;
   border-radius: 4px;
-  border: 2px solid var(--icons-basic, #e5e5e5);
+  border: 2px solid #e5e5e5;
   display: grid;
 }
 
 .button-icon:hover {
   border-radius: 4px;
-  border: 2px solid var(--icons-basic, #000);
+  outline: 2px solid #000;
 }
 
 .button-icon:focus {
   border-radius: 4px;
-  border: 2px solid var(--icons-second-hover, #68A2CA);
+  outline: 2px solid #68a2ca;
 }
 
 .button-icon:active {
   border-radius: 4px;
-  border: 2px solid var(--icons-basic, #000);
+  outline: 2px solid #000;
 }
 
 .button-icon-current {
@@ -1074,17 +1091,17 @@ p.service-description, .advantages-text-description {
 
 .select-control:hover {
   border-radius: 4px;
-  border: 2px solid var(--buttons-blue-hover, #68A2CA);
+  outline: 2px solid #68a2ca;
 }
 
 .select-control:focus {
   border-radius: 4px;
-  border: 2px solid var(--buttons-blue-hover, #68A2CA);
+  outline: 2px solid #68a2ca;
 }
 
 .select-control:disabled {
   border-radius: 4px;
-  border: 2px solid var(--background-basic-2, rgba(0, 0, 0, 0.30));
+  outline: 2px solid rgba(0, 0, 0, 0.30);
 }
 
 .button-browne {
@@ -1101,19 +1118,25 @@ p.service-description, .advantages-text-description {
   padding: 8px 26px;
 }
 
-.button-browne:hover, .button-header:hover, .button-search-hotel:hover {
-  background: var(--buttons-brown-hover, #615048);
-  color: var(--texts-background-deafault, #FFF);
+.button-browne:hover,
+.button-header:hover,
+.button-search-hotel:hover {
+  background: #615048;
+  color: #fff;
 }
 
-.button-browne:focus, .button-header:focus, .button-search-hotel:focus {
-  background: var(--buttons-brown-hover, #615048);
-  color: var(--texts-background-deafault, #FFF);
+.button-browne:focus,
+.button-header:focus,
+.button-search-hotel:focus {
+  background: #615048;
+  color: #fff;
 }
 
-.button-browne:active, .button-header:active, .button-search-hotel:active {
-  background: var(--buttons-basic, #756157);
-  color: var(--texts-background-small, rgba(255, 255, 255, 0.30));
+.button-browne:active,
+.button-header:active,
+.button-search-hotel:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .button-blue {
@@ -1131,18 +1154,18 @@ p.service-description, .advantages-text-description {
 }
 
 .button-blue:hover, .button-subscribe:hover {
-  background: var(--buttons-blue-hover, #68A2CA);
-  color: var(--texts-background-deafault, #FFF);
+  background-color: #68a2ca;
+  color: #fff;
 }
 
 .button-blue:focus, .button-subscribe:focus {
-  background: var(--buttons-blue-hover, #68A2CA);
-  color: var(--texts-background-deafault, #FFF);
+  background-color: #68a2ca;
+  color: #fff;
 }
 
 .button-blue:active, .button-subscribe:active {
-  background: var(--buttons-second, #82B3D3);
-  color: var(--texts-background-small, rgba(255, 255, 255, 0.30));
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .button-green {
@@ -1160,18 +1183,18 @@ p.service-description, .advantages-text-description {
 }
 
 .button-green:hover {
-  background: var(--buttons-green-hover, #6C9E42);
-  color: var(--texts-background-deafault, #FFF);
+  background-color: #6c9e42;
+  color: #fff;
 }
 
 .button-green:focus {
-  background: var(--buttons-green-hover, #6C9E42);
-  color: var(--texts-background-deafault, #FFF);
+  background-color: #6c9e42;
+  color: #fff;
 }
 
 .button-green:active {
-  background: var(--buttons-select, #7DB54F);
-  color: var(--texts-background-small, rgba(255, 255, 255, 0.30));
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .footer {
@@ -1241,16 +1264,15 @@ p.service-description, .advantages-text-description {
 }
 
 .button-price:hover {
-  background: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-price:focus {
-  background: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-price:active {
-  background: #68A2CA;
-  opacity: 0.3;
+  background-color: rgba(104, 162, 202, 0.6);
 }
 
 .reset-price {
@@ -1278,7 +1300,7 @@ p.service-description, .advantages-text-description {
 }
 
 .reset-price:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .reset-price:active {
@@ -1381,13 +1403,18 @@ input[type="number"]::-webkit-inner-spin-button {
 .button-number-min-svg:hover path,
 .button-number-max-svg:hover path {
   fill: #000;
-  opacity: 0.3;
 }
 
 .button-number-min-svg:focus path,
 .button-number-max-svg:focus path {
   border-radius: 4px;
   outline: 3px solid #82b3d3;
+}
+
+.button-number-min-svg:active path,
+.button-number-max-svg:active path {
+  fill: #000;
+  opacity: 0.2;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -1434,7 +1461,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-close-button:hover {
- background: #e6e6e6;
+ background-color: #e6e6e6;
 }
 
 .modal-close-button:focus {
@@ -1442,7 +1469,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-close-button:active {
-  background: #e6e6e6;
+  background-color: #e6e6e6;
   opacity: 0.3;
 }
 
@@ -1516,7 +1543,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .auth-form .field:focus {
   background-color: #e6e6e6;
-  border-color: #83B3D3;
+  border-color: #83b3d3;
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
@@ -1549,7 +1576,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border: none;
   background-image: url("../images/info-toggle.svg");
   background-repeat: no-repeat;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -1608,7 +1635,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .button-modal {
   padding: 18px 77px;
   border-radius: 10px;
-  background: #83B3D3;
+  background: #83b3d3;
   color: #fff;
   text-align: center;
   font-family: inherit;
@@ -1623,15 +1650,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .button-modal:hover {
-  background: #68A2CA;
+  background-color: #68A2CA;
 }
 
 .button-modal:focus {
-  background: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-modal:active {
-  background: #68A2CA;
+  background-color: #68a2ca;
   color: rgb(255,255,255,0.3);
 }
 

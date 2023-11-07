@@ -140,7 +140,7 @@ margin-left: 20px;
 
 .search-link {
   background: url("../images/icon-search.svg");
-  padding: 20px 24px 20px 20px;
+  padding: 20px 26px 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1396,6 +1396,10 @@ p.service-description,
 .icon-footer-svg:active path {
   fill: #68a2ca;
   opacity: 0.3;
+}
+
+.vk-svg {
+  margin-right: 9px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,

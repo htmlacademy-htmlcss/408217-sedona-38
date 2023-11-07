@@ -1563,7 +1563,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .modal-container-close {
-  display: ;
+  display: none;
 }
 
 .tooltip {

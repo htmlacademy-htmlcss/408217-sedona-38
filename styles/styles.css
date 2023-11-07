@@ -1026,21 +1026,21 @@ p.service-description, .advantages-text-description {
 }
 
 .advantages-decorations {
-  background: var(--background-second-1, rgba(131, 179, 211, 0.12));
+  background: rgba(131, 179, 211, 0.12);
   width: 230px;
   display: block;
   padding: 113px 85px;
 }
 
 .advantages-decorations-road {
-  background: var(--background-second-2, rgba(131, 179, 211, 0.20));
+  background: rgba(131, 179, 211, 0.20);
   width: 230px;
   display: block;
   padding: 113px 85px;
 }
 
 .advantages-decorations-bottom {
-  background: var(--background-second-1, rgba(131, 179, 211, 0.12));
+  background: rgba(131, 179, 211, 0.12);
   width: 230px;
   display: block;
   padding: 80px 85px 82px 85px;

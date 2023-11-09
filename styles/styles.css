@@ -62,7 +62,7 @@ body {
 
 .catalog-filter {
   display: flex;
-  color: #fff;
+  color: #ffffff;
   background: url("../images/background-filter.jpg");
   background-color: #283a42;
   background-size: cover;
@@ -73,9 +73,10 @@ body {
 
 .nav-menu {
   display: flex;
-  padding: 2px 0 2px 168px;
+  padding: 0 0 0 168px;
   flex-wrap: wrap;
   max-width: 540px;
+  margin: 0;
 }
 
 .nav-menu-item {
@@ -92,6 +93,7 @@ body {
   text-decoration: none;
   padding: 20px 16px;
   position: relative;
+  display: block;
 }
 
 .nav-menu-link:hover {
@@ -139,6 +141,12 @@ body {
 
 .top-button {
   margin-left: 20px;
+}
+
+.fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .search-link {
@@ -454,7 +462,7 @@ body {
 .select-control,
 .product-card-filter.result {
   font-family: inherit;
-  color: #333;
+  color: #333333;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -686,6 +694,7 @@ body {
   align-items: center;
   width: 682px;
 }
+
 .phone-footer {
   color: #000000;
   text-align: center;
@@ -1054,7 +1063,7 @@ p.service-description,
 }
 
 .advantages-decorations-road {
-  background: rgba(131, 179, 211, 0.20);
+  background: rgba(131, 179, 211, 0.2);
   width: 230px;
   display: block;
   padding: 113px 85px;
@@ -1226,7 +1235,7 @@ p.service-description,
 
 .button-green:focus {
   background-color: #6c9e42;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-green:active {
@@ -1349,7 +1358,7 @@ p.service-description,
 }
 
 .reset-price:active {
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .reset-price:disabled {
@@ -1418,7 +1427,8 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.catalog-filter-price, .number-modal {
+.catalog-filter-price,
+.number-modal {
   appearance: none;
   -moz-appearance: textfield;
 }
@@ -1444,6 +1454,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 48px;
   margin: 0 auto;
   border: 0;
+  background: #f2f2f2;
 }
 
 .button-number-max {
@@ -1451,6 +1462,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 48px;
   margin: 0 auto;
   border: 0;
+  background: #f2f2f2;
 }
 
 .button-number-min-svg:hover path,
@@ -1543,6 +1555,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #000000;
   margin-left: -1px;
 }
+
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -1587,7 +1600,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-image: url("../images/date.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 20px) center;
-  color: #000;
+  color: #000000;
   font-family: inherit;
   font-size: 18px;
   font-style: normal;
@@ -1604,7 +1617,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-color: #83b3d3;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
   width: 15px;
@@ -1708,7 +1721,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .button-modal:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-modal:focus {
@@ -1748,7 +1761,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding-left: 157px;
 }
 
-.tooltip-text:before {
+.tooltip-text::before {
   content: "";
   background-image: url("../images/triangle.svg");
   background-repeat: no-repeat;
@@ -1760,17 +1773,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  }
-
-.fieldset,
-.legend {
-  padding: 0;
-  margin: 0;
-  border: 0;
 }
 
-fieldset {
-  border: 0;
+.form-filter legend {
   padding: 0;
   margin: 0;
+  border: 0;
 }

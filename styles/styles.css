@@ -15,6 +15,7 @@
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
+
 html {
   height: 100%;
 }
@@ -25,13 +26,14 @@ body {
   line-height: 21px;
   background-color: #f2f2f2;
   margin: 0;
+  min-width: 1200px;
   height: 100%;
 }
 
 .container {
   width: 1200px;
-  background-color: #fff;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -45,7 +47,8 @@ body {
   position: relative;
 }
 
-.main-index, .main-catalog {
+.main-index,
+.main-catalog {
   display: flex;
   flex-direction: column;
 }
@@ -80,7 +83,7 @@ body {
 }
 
 .nav-menu-link {
-  color: #000;
+  color: #000000;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -110,7 +113,7 @@ body {
 }
 
 .navigation-current a:not([href]) {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .navigation-current::after {
@@ -135,7 +138,7 @@ body {
 }
 
 .top-button {
-margin-left: 20px;
+  margin-left: 20px;
 }
 
 .search-link {
@@ -287,7 +290,7 @@ margin-left: 20px;
 .range-bar {
   position: absolute;
   height: 4px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .range-toggle {
@@ -327,12 +330,6 @@ margin-left: 20px;
   outline: 2px solid #83b3d3;
 }
 
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
 .toggle-min:focus {
   outline: 3px solid #83b3d3;
 }
@@ -346,6 +343,14 @@ fieldset {
   width: 12px;
   display: block;
   margin-top: 2px;
+}
+
+.breadcrumbs-link-home:hover {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link-home:focus {
+  opacity: 0.3;
 }
 
 .breadcrumbs {
@@ -380,11 +385,11 @@ fieldset {
 }
 
 .breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .h2-title-result {
@@ -468,7 +473,7 @@ fieldset {
   width: 15px;
   height: 16px;
   border: 3px solid transparent;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 3px;
 }
 
@@ -490,7 +495,7 @@ fieldset {
   width: 20px;
   height: 20px;
   border: 3px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 
@@ -542,12 +547,12 @@ fieldset {
   grid-column: span 2;
   text-decoration: none;
   margin-left: -1px;
-  margin-top: -2px
+  margin-top: -2px;
 }
 
 .product-card-title {
   font-family: inherit;
-  color: #000;
+  color: #000000;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -567,7 +572,7 @@ fieldset {
 }
 
 .product-card-price {
-  color: #333;
+  color: #333333;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -576,7 +581,7 @@ fieldset {
 }
 
 .rating-product {
-  color: #333;
+  color: #333333;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -596,7 +601,7 @@ fieldset {
   height: 58px;
   border-radius: 4px;
   background: #82b3d3;
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -618,7 +623,7 @@ fieldset {
 }
 
 .subscribe-description {
-  color: #fff;
+  color: #ffffff;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -631,7 +636,7 @@ fieldset {
   font-family: inherit;
   padding: 8px 50px;
   background: #82b3d3;
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -643,7 +648,7 @@ fieldset {
 }
 
 .title-subscribe {
-  color: #fff;
+  color: #ffffff;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -655,7 +660,7 @@ fieldset {
 
 .top-subtitle-description {
   text-align: center;
-  color: #333;
+  color: #333333;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -682,7 +687,7 @@ fieldset {
   width: 682px;
 }
 .phone-footer {
-  color: #000;
+  color: #000000;
   text-align: center;
   font-size: 40px;
   font-style: normal;
@@ -759,6 +764,7 @@ fieldset {
   border-radius: 4px;
   text-decoration: none;
   font-weight: 700;
+  color: #000000;
 }
 
 .background-welcome {
@@ -780,11 +786,11 @@ fieldset {
 
 .subscribe {
   background-image: url("../images/background-subscribe.jpg");
-  background-color: #fff;
+  background-color: #3e6373;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
+  color: #ffffff;
   width: 1200px;
 }
 
@@ -793,13 +799,13 @@ fieldset {
 }
 
 .subscribe-catalog {
-  color: #000;
+  color: #000000;
   margin: 0;
   padding: 75px 258px 104px;
 }
 
 .subscribe-description-catalog {
-  color: #333;
+  color: #333333;
   padding: 0;
   margin: 0;
   font-size: 22px;
@@ -819,7 +825,7 @@ fieldset {
 
 .button-search-hotel {
   font-family: inherit;
-  color: #fff;
+  color: #ffffff;
   padding: 8px 50px;
   border-radius: 4px;
   background: #756157;
@@ -845,7 +851,7 @@ fieldset {
 
 a.button-header {
   font-family: inherit;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -861,7 +867,7 @@ a.button-header {
 }
 
 h3.real-sity {
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-size: 24px;
   font-style: normal;
@@ -877,7 +883,7 @@ h3.real-sity {
   content: "";
   width: 60px;
   height: 2px;
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.3);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -885,7 +891,7 @@ h3.real-sity {
 }
 
 .h3-title {
-  color: #000;
+  color: #000000;
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
@@ -929,7 +935,7 @@ h3.real-sity {
   content: "";
   width: 60px;
   height: 2px;
-  background: rgba(0, 0, 0, 0.30);
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -942,7 +948,7 @@ h3.real-sity {
   font-weight: 400;
   line-height: 21px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   padding-top: 31px;
   margin: 0;
 }
@@ -1027,7 +1033,7 @@ h3.real-sity {
 
 p.service-description,
 .advantages-text-description {
-  color: #333;
+  color: #333333;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -1071,7 +1077,7 @@ p.service-description,
 
 .button-icon:hover {
   border-radius: 4px;
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
 }
 
 .button-icon:focus {
@@ -1081,27 +1087,27 @@ p.service-description,
 
 .button-icon:active {
   border-radius: 4px;
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
 }
 
 .button-icon-current {
-  border-color: #000;
+  border-color: #000000;
 }
 
 .select-control {
   display: flex;
   width: 292px;
-  padding: 14px 18px;
+  padding: 14px 36px 14px 18px;
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
   margin-left: auto;
-  background: #fff;
+  background: #ffffff;
   appearance: none;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
-  background-color: #fff;
+  background-color: #ffffff;
   background-position: calc(100% - 19px) center;
 }
 
@@ -1117,7 +1123,7 @@ p.service-description,
 
 .select-control:disabled {
   border-radius: 4px;
-  outline: 2px solid rgba(0, 0, 0, 0.30);
+  outline: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .button-browne {
@@ -1136,35 +1142,35 @@ p.service-description,
 
 .button-browne:hover {
   background: #615048;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-header:hover,
 .button-search-hotel:hover {
   background: #615048;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-browne:focus {
   background: #615048;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-header:focus,
 .button-search-hotel:focus {
   background: #615048;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-browne:active {
   background: #756157;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-header:active,
 .button-search-hotel:active {
   background: #756157;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-blue {
@@ -1184,19 +1190,19 @@ p.service-description,
 .button-blue:hover,
 .button-subscribe:hover {
   background-color: #68a2ca;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-blue:focus,
 .button-subscribe:focus {
   background-color: #68a2ca;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-blue:active,
 .button-subscribe:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-green {
@@ -1215,7 +1221,7 @@ p.service-description,
 
 .button-green:hover {
   background-color: #6c9e42;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-green:focus {
@@ -1225,7 +1231,7 @@ p.service-description,
 
 .button-green:active {
   background-color: #7db54f;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer {
@@ -1266,7 +1272,7 @@ p.service-description,
 }
 
 .catalog-price-start {
-  color: #000;
+  color: #000000;
   align-items: center;
   opacity: 0.3;
   position: absolute;
@@ -1275,7 +1281,7 @@ p.service-description,
 }
 
 .catalog-price-end {
-  color: #000;
+  color: #000000;
   align-items: center;
   opacity: 0.3;
   position: absolute;
@@ -1290,7 +1296,7 @@ p.service-description,
   border-radius: 4px;
   background: #82b3d3;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1307,10 +1313,11 @@ p.service-description,
 
 .button-price:focus {
   background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-price:active {
-  background-color: rgba(104, 162, 202, 0.6);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .reset-price {
@@ -1323,7 +1330,7 @@ p.service-description,
   border-radius: 4px;
   border: 0;
   background-color: transparent;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -1353,7 +1360,7 @@ p.service-description,
   font-family: inherit;
   width: 80px;
   padding: 11px 40px 8px 18px;
-  color: #000;
+  color: #000000;
   border-radius: 4px 0 0 4px;
   background: #f2f2f2;
   font-size: 18px;
@@ -1361,6 +1368,10 @@ p.service-description,
   font-weight: 700;
   line-height: 24px;
   border: 3px solid transparent;
+}
+
+.catalog-filter-price-right {
+  border-radius: 0 4px 4px 0;
 }
 
 .catalog-filter-price:focus {
@@ -1404,12 +1415,12 @@ p.service-description,
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .catalog-filter-price, .number-modal {
-    appearance: none;
-    -moz-appearance: textfield;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .number-modal {
@@ -1417,7 +1428,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 48px;
   background: #f2f2f2;
   border: 0;
-  color: #000;
+  color: #000000;
   text-align: center;
   font-family: inherit;
   font-size: 18px;
@@ -1444,7 +1455,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .button-number-min-svg:hover path,
 .button-number-max-svg:hover path {
-  fill: #000;
+  fill: #000000;
 }
 
 .button-number-min-svg:focus path,
@@ -1455,7 +1466,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .button-number-min-svg:active path,
 .button-number-max-svg:active path {
-  fill: #000;
+  fill: #000000;
+  opacity: 0.2;
+}
+
+.modal-close-button-svg:active path {
+  fill: #000000;
   opacity: 0.2;
 }
 
@@ -1470,7 +1486,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   width: 100%;
   height: 100%;
-  background: rgba(242, 242, 242, 0.80);
+  background: rgba(242, 242, 242, 0.8);
   z-index: 50;
 }
 
@@ -1480,7 +1496,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: auto;
   padding: 64px 70px;
   border-radius: 30px;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -1500,10 +1516,11 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding-top: 6px;
 }
 
 .modal-close-button:hover {
- background-color: #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 .modal-close-button:focus {
@@ -1511,8 +1528,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-close-button:active {
-  background-color: #e6e6e6;
-  opacity: 0.3;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .modal-title {
@@ -1524,7 +1540,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
   margin-left: -1px;
 }
 .auth-form {
@@ -1534,7 +1550,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-subtitle {
-  color: #000;
+  color: #000000;
   font-family: inherit;
   font-size: 20px;
   font-style: normal;
@@ -1630,16 +1646,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .tooltip-text {
-  background-color: #333;
-  color: #fff;
+  background-color: #333333;
+  color: #ffffff;
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  padding: 15px 18px 18px 22px;
+  padding: 25px 18px 20px 22px;
   border-radius: 10px;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   width: 216px;
   position: absolute;
   top: 100%;
@@ -1678,7 +1694,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 18px 77px;
   border-radius: 10px;
   background: #83b3d3;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-family: inherit;
   font-size: 20px;
@@ -1701,7 +1717,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .button-modal:active {
   background-color: #68a2ca;
-  color: rgb(255,255,255,0.3);
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .modal-text {
@@ -1722,7 +1738,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .modal-text-black {
-  color: #333;
+  color: #333333;
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
@@ -1746,7 +1762,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-right: auto;
   }
 
-  .fieldset, legend {
-    padding: 0;
-    margin: 0;
-  }
+.fieldset,
+.legend {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}

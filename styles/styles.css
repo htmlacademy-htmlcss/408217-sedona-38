@@ -165,7 +165,7 @@ body {
 }
 
 .favorits-number {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-align: center;
   font-size: 10px;
   font-style: normal;
@@ -262,6 +262,7 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  gap: 2px;
 }
 
 .price-filter {
@@ -605,7 +606,7 @@ body {
   display: grid;
   align-content: center;
   text-align: center;
-  width: 58px;
+  min-width: 58px;
   height: 58px;
   border-radius: 4px;
   background: #82b3d3;
@@ -1105,7 +1106,7 @@ p.service-description,
 
 .select-control {
   display: flex;
-  width: 292px;
+  min-width: 292px;
   padding: 14px 36px 14px 18px;
   justify-content: space-between;
   align-items: center;
@@ -1260,7 +1261,7 @@ p.service-description,
   list-style-type: none;
   margin: 0;
   display: inline-block;
-  width: 130px;
+  min-width: 130px;
 }
 
 .button-icon-vk {
@@ -1422,8 +1423,8 @@ p.service-description,
   margin-right: 9px;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.price-filter-field input[type="number"]::-webkit-outer-spin-button,
+.price-filter-field input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
@@ -1615,15 +1616,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .auth-form .field:focus {
   background-color: #e6e6e6;
   border-color: #83b3d3;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-  width: 15px;
-  padding: 0;
-  margin: 0;
-  margin-top: 10px;
 }
 
 .number-guests {
